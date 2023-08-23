@@ -26,7 +26,7 @@ public abstract class CropsMixin extends Block {
         super.playerWillDestroy(level, pos, state, player);
         if (!this.isMaxAge(state) || player.isCreative() || state.is(ModTags.CROPS_WITHOUT_EXP)) return;
         if (level instanceof ServerLevel serverLevel)
-            this.popExperience(serverLevel, pos, level.random.nextIntBetweenInclusive(4, 7));
+            this.popExperience(serverLevel, pos, level.random.nextIntBetweenInclusive(2, 5));
     }
 
 }
