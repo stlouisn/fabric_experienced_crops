@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.ordana.template_mod.mixins.fabric",
+  "package": "com.ordana.experienced_crops.mixins.fabric",
   "compatibilityLevel": "JAVA_17",
   "client": [
   ],

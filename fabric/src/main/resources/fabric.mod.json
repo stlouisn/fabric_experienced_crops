@@ -1,30 +1,30 @@
 {
   "schemaVersion": 1,
-  "id": "template_mod",
+  "id": "experienced_crops",
   "version": "${version}",
-  "name": "Template Mod",
-  "description": "Template Mod Description",
+  "name": "Experienced Crops",
+  "description": "Obtain xp orbs from fully grown crops!",
   "authors": [
     "Ordana"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/template_mod",
-    "sources": "https://github.com/AstralOrdana/template_mod"
+    "homepage": "https://modrinth.com/mod/experienced_crops",
+    "sources": "https://github.com/AstralOrdana/experienced_crops"
   },
   "license": "LGPLv3",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.ordana.template_mod.fabric.TemplateModFabric"
+      "com.ordana.experienced_crops.fabric.ExperiencedCropsFabric"
     ],
     "modmenu": [
-      "com.ordana.template_mod.integration.fabric.ModMenuCompat"
+      "com.ordana.experienced_crops.integration.fabric.ModMenuCompat"
     ]
   },
   "mixins": [
-    "template_mod.mixins.json",
-    "template_mod-common.mixins.json"
+    "experienced_crops.mixins.json",
+    "experienced_crops-common.mixins.json"
   ],
   "depends": {
     "fabric": "*",

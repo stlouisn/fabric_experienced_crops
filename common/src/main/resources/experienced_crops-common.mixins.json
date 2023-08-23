@@ -1,11 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.ordana.template_mod.mixins",
+  "package": "com.ordana.experienced_crops.mixins",
   "compatibilityLevel": "JAVA_17",
-  "client": [
-  ],
+  "client": [],
   "mixins": [
+    "CropsMixin"
   ],
   "injectors": {
     "defaultRequire": 1

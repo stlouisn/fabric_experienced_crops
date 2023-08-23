@@ -7,24 +7,21 @@ license="LGPLv3"
 
 [[mods]] #mandatory
 
-modId="template_mod" #mandatory
+modId="experienced_crops" #mandatory
 
 version = "${version}"
 
-displayName="Template Mod" #mandatory
+displayName="Experienced Crops" #mandatory
 
 logoFile="icon.png" #optional
 
-credits="Ordana" #optional
-
 authors="Ordana" #optional
 
-itemIcon="template_mod:template" #catalogue icon
 description='''
-Template Mod Description
+Obtain xp orbs from fully grown crops!
 '''
 
-[[dependencies.template_mod]] #optional
+[[dependencies.experienced_crops]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
 
@@ -35,7 +32,7 @@ Template Mod Description
     ordering="NONE"
     side="BOTH"
 # Here's another dependency
-[[dependencies.template_mod]]
+[[dependencies.experienced_crops]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
@@ -43,7 +40,7 @@ Template Mod Description
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.template_mod]]
+[[dependencies.experienced_crops]]
 
     modId="moonlight"
     mandatory=true
