@@ -1,19 +1,22 @@
-build/
-*.ipr
-run/
-*.iws
-out/
-*.iml
-.gradle/
-output/
-bin/
-libs/
-
+# eclipse
+eclipse
+.settings
+.metadata
 .classpath
 .project
-.idea/
-classes/
-.metadata
-.vscode
-.settings
 *.launch
+
+# idea
+.idea
+*.ipr
+*.iws
+*.iml
+
+# gradle
+build
+.gradle
+
+# other
+.architectury-transformer
+run
+runs
