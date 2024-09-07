@@ -1,9 +1,3 @@
 {
-
-  "modmenu.homepage": "${url_homepage_name}",
-
-  "block.experienced_crops.mod_block": "Mod Block",
-  "entity.experienced_crops.mod_entity": "Mod Entity",
-  "item.experienced_crops.mod_item": "Mod Item"
-
+  "modmenu.homepage": "${url_homepage_name}"
 }

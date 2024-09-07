@@ -1,10 +1,12 @@
 {
   "required": true,
-  "package": "${maven_group}.mixins",
+  "package": "dev.experiencedcrops.mixins",
   "compatibilityLevel": "JAVA_21",
   "minVersion": "0.8.5",
   "mixins": [
-    "CropsMixin"
+    "CocoaBlockMixin",
+    "CropBlockMixin",
+    "NetherWartBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

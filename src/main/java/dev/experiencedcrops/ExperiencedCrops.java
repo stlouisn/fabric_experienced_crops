@@ -1,14 +1,17 @@
-package com.ordana.experienced_crops.fabric;
+package dev.experiencedcrops;
 
-import com.ordana.experienced_crops.ExperiencedCrops;
+import dev.experiencedcrops.config.ModConfig;
+
 import net.fabricmc.api.ModInitializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-public class ExperiencedCropsFabric implements ModInitializer {
+@SuppressWarnings("unused")
+public class ExperiencedCrops implements ModInitializer {
 
-    @Override
-    public void onInitialize() {
+  public static final Logger LOGGER = LoggerFactory.getLogger(Constants.MOD_ID);
 
-        ExperiencedCrops.commonInit();
-
-    }
+  public void onInitialize() {
+    ModConfig.init();
+  }
 }

@@ -1,34 +1,43 @@
 {
   "schemaVersion": 1,
-  "id": "experienced_crops",
-  "version": "${version}",
-  "name": "Experienced Crops",
-  "description": "Obtain xp orbs from fully grown crops!",
+  "id": "${mod_id}",
+  "version": "${mod_version}",
+  "name": "${mod_name} [C]",
+  "description": "${mod_description}",
   "authors": [
-    "Ordana"
+    "${mod_authors}"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/experienced_crops",
-    "sources": "https://github.com/AstralOrdana/experienced_crops"
+    "homepage": "${url_homepage}",
+    "sources": "${url_sources}",
+    "issues": "${url_issues}"
   },
-  "license": "LGPLv3",
-  "icon": "icon.png",
-  "environment": "*",
+  "license": "${mod_license}",
+  "icon": "assets/${mod_id}/icon.png",
+  "environment": "${mod_fabric_environment}",
   "entrypoints": {
     "main": [
-      "com.ordana.experienced_crops.fabric.ExperiencedCropsFabric"
+      "${maven_group}.${maven_entrypoint}"
     ],
     "modmenu": [
-      "com.ordana.experienced_crops.integration.fabric.ModMenuCompat"
+      "${maven_group}.config.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "experienced_crops.mixins.json",
-    "experienced_crops-common.mixins.json"
+    "${mod_id}.mixins.json"
   ],
   "depends": {
-    "fabric": "*",
-    "minecraft": ">=1.19.2",
-    "moonlight": ">=1.19.2-2.0.35"
+    "fabricloader": ">=${fabric_loader_version}",
+    "minecraft": "${minecraft_version}"
+  },
+  "recommends": {
+    "modmenu": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.homepage": "${url_homepage}"
+      }
+    }
   }
 }
