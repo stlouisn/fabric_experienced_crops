@@ -18,7 +18,7 @@ public class ModConfig implements ConfigData {
 
   @Comment("Experience Amount")
   @Tooltip
-  public int experienceDropAmount = 50;
+  public int experienceDropAmount = 1;
 
   public static void init() {
     AutoConfig.register(ModConfig.class, Toml4jConfigSerializer::new);

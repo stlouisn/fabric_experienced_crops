@@ -1,3 +1,10 @@
 {
-  "modmenu.homepage": "${url_homepage_name}"
+
+  "modmenu.homepage": "${url_homepage_name}",
+
+  "text.autoconfig.experiencedcrops.title": "Experienced Crops",
+  "text.autoconfig.experiencedcrops.option.experienceDropChance": "Experience Chance",
+  "text.autoconfig.experiencedcrops.option.experienceDropChance.@Tooltip": "The chance that breaking crops will drop experience.",
+  "text.autoconfig.experiencedcrops.option.experienceDropAmount": "Experience Amount",
+  "text.autoconfig.experiencedcrops.option.experienceDropAmount.@Tooltip": "The amount of experience dropped when breaking crops."
 }
