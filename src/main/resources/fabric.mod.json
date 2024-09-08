@@ -17,10 +17,10 @@
   "environment": "${mod_environment}",
   "entrypoints": {
     "main": [
-      "${maven_group}.${maven_entrypoint}"
+      "dev.experiencedcrops.ExperiencedCrops"
     ],
     "modmenu": [
-      "${maven_group}.config.ModMenuIntegration"
+      "dev.experiencedcrops.config.ModMenuIntegration"
     ]
   },
   "mixins": [
