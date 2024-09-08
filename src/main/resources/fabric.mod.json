@@ -9,12 +9,12 @@
   ],
   "contact": {
     "homepage": "${url_homepage}",
-    "sources": "${url_sources}",
-    "issues": "${url_issues}"
+    "sources": "${git_sources}",
+    "issues": "${git_issues}"
   },
   "license": "${mod_license}",
   "icon": "assets/${mod_id}/icon.png",
-  "environment": "${mod_fabric_environment}",
+  "environment": "${mod_environment}",
   "entrypoints": {
     "main": [
       "${maven_group}.${maven_entrypoint}"
@@ -28,7 +28,8 @@
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "cloth-config": "*"
   },
   "recommends": {
     "modmenu": "*"
@@ -36,7 +37,7 @@
   "custom": {
     "modmenu": {
       "links": {
-        "modmenu.homepage": "${url_homepage}"
+        "modmenu.${url_type}": "${url_homepage}"
       }
     }
   }
