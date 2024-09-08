@@ -15,6 +15,9 @@ repositories {
   // Cloth Config
   maven { url = "https://maven.shedaniel.me/" }
 
+  // Mixin Extras
+  maven { url = "https://jitpack.io" }
+
   // Mod Menu
   maven { url = "https://maven.terraformersmc.com/" }
 
