@@ -6,9 +6,9 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@SuppressWarnings("unused")
-public class ExperiencedCrops implements ModInitializer {
+public final class ExperiencedCrops implements ModInitializer {
 
+  @SuppressWarnings("unused")
   public static final Logger LOGGER = LoggerFactory.getLogger(Constants.MOD_ID);
 
   public void onInitialize() {
