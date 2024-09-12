@@ -4,6 +4,7 @@ import static net.minecraft.world.level.block.NetherWartBlock.AGE;
 import static net.minecraft.world.level.block.NetherWartBlock.MAX_AGE;
 
 import dev.experiencedcrops.config.ModConfig;
+import dev.experiencedcrops.config.ModConfigData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
@@ -52,8 +53,8 @@ public abstract class NetherWartBlockMixin extends Block {
     if (!this.isMaxAge(state)) {
       return state;
     }
-    if (level instanceof ServerLevel serverLevel && level.random.nextIntBetweenInclusive(1, 100) <= ModConfig.getInstance().experienceDropChance) {
-      this.popExperience(serverLevel, pos, ModConfig.getInstance().experienceDropAmount);
+    if (level instanceof ServerLevel serverLevel && level.random.nextIntBetweenInclusive(1, 100) <= ModConfig.CONFIG.experienceDropChance) {
+      this.popExperience(serverLevel, pos, ModConfig.CONFIG.experienceDropAmount);
     }
     return state;
   }
