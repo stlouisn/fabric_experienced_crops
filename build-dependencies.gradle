@@ -1,0 +1,4 @@
+/ Cloth Config /
+def cloth_config_version = "15.0.130" // https://modrinth.com/mod/cloth-config/versions
+repositories { maven { url = "https://maven.shedaniel.me/" }}
+dependencies { modApi ( "me.shedaniel.cloth:cloth-config-neoforge:${cloth_config_version}" )}
