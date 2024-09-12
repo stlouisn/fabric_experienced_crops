@@ -1,0 +1,9 @@
+/ Mojang + Parchment Mappings /
+repositories { maven { url = "https://maven.parchmentmc.org" }}
+dependencies {
+  loom { silentMojangMappingsLicense() }
+  mappings loom.layered() {
+    it.officialMojangMappings { setNameSyntheticMembers(false) }
+    it.parchment "org.parchmentmc.data:parchment-${parchment_version}@zip"
+  }
+}
