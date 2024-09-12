@@ -1,6 +1,7 @@
 package dev.experiencedcrops.mixins;
 
 import dev.experiencedcrops.config.ModConfig;
+import dev.experiencedcrops.config.ModConfigData;
 import dev.experiencedcrops.utils.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -35,8 +36,8 @@ public abstract class CropBlockMixin extends Block {
     if (!this.isMaxAge(state)) {
       return state;
     }
-    if (level instanceof ServerLevel serverLevel && level.random.nextIntBetweenInclusive(1, 100) <= ModConfig.getInstance().experienceDropChance) {
-      this.popExperience(serverLevel, pos, ModConfig.getInstance().experienceDropAmount);
+    if (level instanceof ServerLevel serverLevel && level.random.nextIntBetweenInclusive(1, 100) <= ModConfig.CONFIG.experienceDropChance) {
+      this.popExperience(serverLevel, pos, ModConfig.CONFIG.experienceDropAmount);
     }
     return state;
   }
