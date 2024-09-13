@@ -1,7 +1,9 @@
 {
-  "text.autoconfig.experiencedcrops.title": "Experienced Crops",
-  "text.autoconfig.experiencedcrops.option.experienceDropChance": "Experience Chance",
-  "text.autoconfig.experiencedcrops.option.experienceDropChance.@Tooltip": "The chance that breaking crops will drop experience.",
-  "text.autoconfig.experiencedcrops.option.experienceDropAmount": "Experience Amount",
-  "text.autoconfig.experiencedcrops.option.experienceDropAmount.@Tooltip": "The amount of experience dropped when breaking crops."
+  "experiencedcrops.configuration.title": "Experienced Crops",
+  "experiencedcrops.configuration.section.experiencedcrops.common.toml": "Common Settings",
+  "experiencedcrops.configuration.section.experiencedcrops.common.toml.title": "Experienced Crops",
+  "experiencedcrops.configuration.experienceDropChance": "Experience Chance",
+  "experiencedcrops.configuration.experienceDropChance.tooltip": "The chance that breaking crops will drop experience.",
+  "experiencedcrops.configuration.experienceDropAmount": "Experience Amount",
+  "experiencedcrops.configuration.experienceDropAmount.tooltip": "The amount of experience dropped when breaking crops."
 }

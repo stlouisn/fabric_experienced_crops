@@ -26,12 +26,5 @@ versionRange = "${minecraft_version}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.${mod_id}]]
-modId = "cloth_config"
-type = "required"
-versionRange = "*"
-ordering = "AFTER"
-side = "BOTH"
-
 [[mixins]]
 config = "${mod_id}.mixins.json"

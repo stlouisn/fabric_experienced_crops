@@ -3,7 +3,7 @@ package dev.experiencedcrops.mixins;
 import static net.minecraft.world.level.block.NetherWartBlock.AGE;
 import static net.minecraft.world.level.block.NetherWartBlock.MAX_AGE;
 
-import dev.experiencedcrops.config.ModConfig;
+import dev.experiencedcrops.config.ConfigHandler;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
@@ -24,36 +24,36 @@ public abstract class NetherWartBlockMixin extends Block {
   }
 
   @Unique
-  public int getMaxAge() {
+  public int experiencedcrops$getMaxAge() {
     return MAX_AGE;
   }
 
   @Unique
-  public int getAge(BlockState state) {
-    return state.getValue(this.getAgeProperty());
+  public int experiencedcrops$getAge(BlockState state) {
+    return state.getValue(this.experiencedcrops$getAgeProperty());
   }
 
   @Unique
-  protected IntegerProperty getAgeProperty() {
+  protected IntegerProperty experiencedcrops$getAgeProperty() {
     return AGE;
   }
 
   @Unique
-  public final boolean isMaxAge(BlockState state) {
-    return this.getAge(state) >= this.getMaxAge();
+  public final boolean experiencedcrops$isMaxAge(BlockState state) {
+    return this.experiencedcrops$getAge(state) >= this.experiencedcrops$getMaxAge();
   }
 
   @Override
-  public @NotNull BlockState playerWillDestroy(Level level, BlockPos pos, BlockState state, Player player) {
+  public @NotNull BlockState playerWillDestroy(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state, @NotNull Player player) {
     super.playerWillDestroy(level, pos, state, player);
     if (player.isCreative()) {
       return state;
     }
-    if (!this.isMaxAge(state)) {
+    if (!this.experiencedcrops$isMaxAge(state)) {
       return state;
     }
-    if (level instanceof ServerLevel serverLevel && level.random.nextIntBetweenInclusive(1, 100) <= ModConfig.CONFIG.experienceDropChance) {
-      this.popExperience(serverLevel, pos, ModConfig.CONFIG.experienceDropAmount);
+    if (level instanceof ServerLevel serverLevel && level.random.nextIntBetweenInclusive(1, 100) <= ConfigHandler.experienceDropChance.get()) {
+      this.popExperience(serverLevel, pos, ConfigHandler.experienceDropAmount.get());
     }
     return state;
   }
