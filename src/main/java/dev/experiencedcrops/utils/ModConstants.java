@@ -1,6 +1,6 @@
 package dev.experiencedcrops.utils;
 
-public class ModConstants {
+public final class ModConstants {
 
   public static final String MOD_ID = "experiencedcrops";
 }
