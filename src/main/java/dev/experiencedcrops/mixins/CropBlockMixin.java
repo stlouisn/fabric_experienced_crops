@@ -1,7 +1,6 @@
 package dev.experiencedcrops.mixins;
 
 import dev.experiencedcrops.config.ModConfig;
-import dev.experiencedcrops.config.ModConfigData;
 import dev.experiencedcrops.utils.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;

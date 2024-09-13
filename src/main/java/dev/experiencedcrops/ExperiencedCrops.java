@@ -16,9 +16,9 @@ import org.slf4j.LoggerFactory;
 @Mod(ModConstants.MOD_ID)
 public final class ExperiencedCrops {
 
-  public static final Logger LOGGER = LoggerFactory.getLogger(Constants.MOD_ID);
+  public static final Logger LOGGER = LoggerFactory.getLogger(ModConstants.MOD_ID);
 
-  public ModName(IEventBus modBus) {
+  public ExperiencedCrops(IEventBus modBus) {
     modBus.addListener(this::commonSetup);
     ModLoadingContext.get().registerExtensionPoint(IConfigScreenFactory.class, () -> (client, parent) -> AutoConfig.getConfigScreen(ModConfigData.class, parent).get());
   }
