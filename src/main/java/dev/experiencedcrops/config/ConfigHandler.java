@@ -3,7 +3,7 @@ package dev.experiencedcrops.config;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import net.neoforged.neoforge.common.ModConfigSpec.ConfigValue;
 
-public class ConfigHandler {
+public final class ConfigHandler {
 
   public static final ModConfigSpec configSpec;
 
