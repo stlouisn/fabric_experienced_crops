@@ -9,7 +9,7 @@ import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 @SuppressWarnings("unused")
 @Mod(value = ModConstants.MOD_ID, dist = Dist.CLIENT)
-public class ExperiencedCropsClient {
+public final class ExperiencedCropsClient {
 
   public ExperiencedCropsClient(ModContainer container) {
     container.registerExtensionPoint(IConfigScreenFactory.class, (mc, parent) -> new ConfigurationScreen(container, parent));
