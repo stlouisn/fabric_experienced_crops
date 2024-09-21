@@ -14,10 +14,12 @@ public final class ConfigHandler {
     ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
     experienceDropChance = builder
+        .comment("The chance that breaking crops will drop experience.\nDefault: 50")
         .defineInRange("experienceDropChance", 50, 0, 100);
 
     experienceDropAmount = builder
-        .define("experienceDropAmount", 1);
+        .comment("The amount of experience dropped when breaking crops.\nDefault: 1")
+        .defineInRange("experienceDropAmount", 1,1,10);
 
     configSpec = builder.build();
 
